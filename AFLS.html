@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfLS - Alternative für Los Santos</title>
+    <title>AfLS - Alternative für Los Santos | Die Modernisierungskraft</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -34,6 +34,7 @@
             overflow-x: hidden;
         }
 
+        /* Header mit modernem Design */
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
@@ -174,6 +175,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
             color: white;
@@ -190,7 +192,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"></path></svg>') no-repeat bottom;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"></path><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23ffffff"></path><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"></path></svg>') no-repeat bottom;
             background-size: cover;
             opacity: 0.1;
         }
@@ -240,6 +242,7 @@
             padding: 0 30px;
         }
 
+        /* Moderne Info-Cards */
         .info-banner {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
@@ -297,6 +300,7 @@
             margin: 0;
         }
 
+        /* OOC Section */
         .ooc-section {
             background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
             color: white;
@@ -318,6 +322,7 @@
             text-align: center;
         }
 
+        /* Team Section */
         .team-section {
             background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
             color: white;
@@ -375,6 +380,7 @@
             font-style: italic;
         }
 
+        /* Content Sections */
         .content-section {
             background: white;
             border-radius: 20px;
@@ -430,6 +436,7 @@
             font-weight: 600;
         }
 
+        /* Values Grid */
         .values-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -496,6 +503,7 @@
             z-index: 1;
         }
 
+        /* Rangsystem */
         .rank-list {
             background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
             padding: 40px;
@@ -541,6 +549,7 @@
             background: #ff6f00;
         }
 
+        /* Ideologie Box */
         .ideology-box {
             background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
             padding: 40px;
@@ -575,6 +584,7 @@
             box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
         }
 
+        /* Footer */
         .footer {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
@@ -589,6 +599,32 @@
             font-size: 16px;
         }
 
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        /* Back to Top Button */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -620,6 +656,7 @@
             transform: translateY(-5px);
         }
 
+        /* Loading Animation */
         .loading {
             position: fixed;
             top: 0;
@@ -654,6 +691,7 @@
             }
         }
 
+        /* Responsive */
         @media (max-width: 1024px) {
             .hero h1 {
                 font-size: 42px;
@@ -743,10 +781,12 @@
     </style>
 </head>
 <body>
+    <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
 
+    <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </div>
@@ -790,6 +830,7 @@
     </div>
 
     <div class="container">
+        <!-- IC Informationen -->
         <div class="info-banner">
             <h2><i class="fas fa-id-card"></i> Bewerbungsinformationen (IC)</h2>
             <div class="info-grid">
@@ -820,6 +861,7 @@
             </div>
         </div>
 
+        <!-- OOC Informationen -->
         <div class="ooc-section">
             <h3><i class="fas fa-gamepad"></i> OOC Informationen</h3>
             <div class="info-grid">
@@ -834,22 +876,40 @@
             </div>
         </div>
 
+        <!-- Vorstellung -->
         <div class="content-section" id="vorstellung">
             <h2><i class="fas fa-user-tie"></i> Vorstellung - Vincenzo Young</h2>
-            <p>Hallo zusammen,</p>
-            <p>ich bin Vincenzo Young und will Gouverneur werden. Warum? Weil ich's satt hab. Satt, wie hier alles vor sich hindümpelt. Satt von Typen, die große Reden schwingen und am Ende nix passiert. Diese Stadt hat so viel Potenzial – aber das wird einfach verschwendet.</p>
-            <p>Los Santos könnte richtig gut sein. Wir haben Leute, die was draufhaben. Geschäftsleute mit Ideen. Familien, die hier was aufbauen wollen. Aber was kriegen die? Einen Haufen Bürokratie. Unsichere Straßen. Steuern bis zum Abwinken. Kein Wunder, dass manche schon überlegen abzuhauen.</p>
-            <p>Ich war da draußen bei den Leuten. Nich nur auf irgendwelchen fancy Empfängen, sondern wirklich draußen. Hab mit Leuten geredet, die frustriert sind. Die sich nicht mehr sicher fühlen. Die von ihrer eigenen Stadtverwaltung behandelt werden wie Bittsteller. Das kann's doch nicht sein.</p>
-            <p>Mir ist eins klar geworden: Wir brauchen keinen, der schön reden kann. Wir brauchen jemanden, der anpackt und Sachen durchzieht. Der nicht ständig irgendwelche Ausschüsse bildet, sondern einfach mal Entscheidungen trifft.</p>
-            <p>Zusammen mit Marvin Benko hab ich nen Plan: Los Santos muss wieder sicher werden. Überall. Die Wirtschaft muss laufen können, damit Jobs entstehen. Und die Verwaltung? Die muss endlich für die Bürger da sein, nicht andersrum.</p>
-            <p>Die AfLS ist nicht so'n typischer Politikerverein. Wir sind Leute, die einfach keinen Bock mehr haben auf den ganzen Stillstand. Die was bewegen wollen. Und wir ziehen das durch – ob's den Establishment-Typen passt oder nicht.</p>
-            <p>Gebt uns die Chance zu zeigen, dass es auch anders geht. Los Santos hat was Besseres verdient. Lasst uns das anpacken!</p>
+            <p>
+                Sehr geehrte Mitbürgerinnen und Mitbürger von Los Santos,
+            </p>
+            <p>
+                ich bin Vincenzo Young, und ich will Gouverneur dieser Stadt werden. Nicht weil ich schon immer Politiker werden wollte – sondern weil ich genug gesehen habe. Genug von den leeren Versprechungen. Genug von den Ausreden. Genug davon, wie diese Stadt ihr Potenzial verschwendet.
+            </p>
+            <p>
+                Los Santos hat alles, was eine große Stadt braucht. Wir haben fleißige Menschen, wir haben Unternehmer mit Ideen, wir haben Familien, die hier ein gutes Leben aufbauen wollen. Aber was kriegen sie? Einen Verwaltungsapparat, der sie ausbremst. Eine Sicherheitslage, die immer schlechter wird. Wirtschaftliche Rahmenbedingungen, die jeden Unternehmer zur Verzweiflung treiben.
+            </p>
+            <p>
+                In den letzten Jahren habe ich mir diese Stadt genau angeschaut. Ich war bei den Leuten, nicht nur bei irgendwelchen Empfängen. Ich habe mit Geschäftsleuten geredet, die ernsthaft überlegen abzuwandern – wegen der Steuerlast, wegen der Bürokratie. Ich war in Vierteln, wo sich Familien abends nicht mehr auf die Straße trauen. Ich habe mit ganz normalen Bürgern gesprochen, die von ihrer eigenen Verwaltung behandelt werden wie Bittsteller.
+            </p>
+            <p>
+                Das hat mir die Augen geöffnet: Wir brauchen hier keinen, der nur gut reden kann. Wir brauchen jemanden, der Probleme löst. Der sich nicht hinter Ausschüssen und Arbeitskreisen versteckt, sondern Entscheidungen trifft.
+            </p>
+            <p>
+                Zusammen mit Marvin Benko habe ich einen Plan: Los Santos muss wieder sicher werden – überall, zu jeder Zeit. Die Wirtschaft muss atmen können, damit Arbeitsplätze entstehen. Und die Verwaltung muss endlich für die Bürger arbeiten, nicht gegen sie.
+            </p>
+            <p>
+                Die AfLS ist angetreten, um hier aufzuräumen. Um Dinge anzupacken, die andere schon längst aufgegeben haben. Wir sind keine Karrierepolitiker – wir sind Leute, die einfach genug haben vom ewigen Stillstand.
+            </p>
+            <p>
+                Ich bitte Sie: Geben Sie uns die Chance, zu beweisen, dass es auch anders geht. Los Santos hat eine starke Zukunft verdient – packen wir es an!
+            </p>
         </div>
 
+        <!-- Team Section -->
         <div class="team-section" id="team">
             <h2><i class="fas fa-users"></i> Unser Team</h2>
             <p style="text-align: center; font-size: 18px; margin-bottom: 30px; opacity: 0.95;">
-                Wir sind ein starkes Team und ziehen das hier zusammen durch!
+                Wir sind ein starkes Team – und gemeinsam setzen wir uns für Los Santos ein!
             </p>
             <div class="team-grid">
                 <div class="team-member">
@@ -955,6 +1015,7 @@
             </div>
         </div>
 
+        <!-- Parteiprogramm -->
         <div class="content-section" id="programm">
             <h2><i class="fas fa-file-contract"></i> Parteiprogramm - Dafür stehen wir</h2>
             
@@ -962,74 +1023,95 @@
                 <div class="value-card">
                     <div class="icon">🛡️</div>
                     <h3>Sicherheit & Ordnung</h3>
-                    <p>Kriminelle sollen sich hier nicht mehr wohlfühlen. Mehr Cops auf der Straße. Unsere Leute sollen sich wieder sicher fühlen können – Tag und Nacht.</p>
+                    <p>Null Toleranz bei Kriminalität. Mehr Polizisten auf den Straßen. Unsere Bürger sollen sich wieder sicher fühlen – Tag und Nacht.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="icon">💼</div>
-                    <h3>Wirtschaft ankurbeln</h3>
-                    <p>Weniger Steuern für die Kleinen. Weniger Papierkram, mehr Freiheit zum Arbeiten. Richtige Jobs, die bleiben – nicht son Bullshit auf dem Papier.</p>
+                    <h3>Wirtschaft voranbringen</h3>
+                    <p>Weniger Steuern für kleine Unternehmen. Weniger Bürokratie, mehr Freiheit. Gute Jobs, die bleiben – nicht nur auf dem Papier.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="icon">🏗️</div>
-                    <h3>Infrastruktur in Schuss bringen</h3>
-                    <p>Unsere Straßen brauchen dringend ne Sanierung. Busse und Bahnen müssen pünktlich fahren. Die Verwaltung braucht endlich vernünftige IT.</p>
+                    <h3>Moderne Infrastruktur</h3>
+                    <p>Unsere Straßen müssen saniert werden. Busse und Bahnen sollen pünktlich fahren. Die Verwaltung muss endlich digital werden.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="icon">⚖️</div>
                     <h3>Rechtsstaat & Justiz</h3>
-                    <p>Faire Gerichte, aber zackig. Wer Scheiße baut, kriegt die Quittung – egal wer. Keine Sonder behandlung für niemanden.</p>
+                    <p>Faire Gerichte, schnelle Verfahren. Wer Mist baut, wird bestraft – egal wer er ist. Gleiches Recht für alle, ohne Ausnahme.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="icon">🤝</div>
-                    <h3>Ehrliche Kommunikation</h3>
-                    <p>Ihr wollt wissen, was läuft? Kriegt ihr. Regelmäßige Bürgersprechstunden, alles transparent. Keine Hinterzimmer-Deals mehr.</p>
+                    <h3>Offene Kommunikation</h3>
+                    <p>Ihr wollt wissen, was läuft? Wir sagen es euch. Regelmäßige Bürgersprechstunden, offene Entscheidungen. Keine versteckten Deals.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="icon">🎯</div>
-                    <h3>Effizienz statt Bürokratie</h3>
-                    <p>Schluss mit dem ganzen Papierkram-Wahnsinn. Entscheidungen müssen getroffen werden – und zwar so, dass sie auch was bringen. Probleme lösen, statt verwalten.</p>
+                    <h3>Effizienz statt Papierkram</h3>
+                    <p>Schluss mit dem Bürokratie-Wahnsinn. Schnelle Entscheidungen, die auch was bringen. Probleme lösen, nicht verwalten.</p>
                 </div>
             </div>
 
-            <h3>Was konkret passieren wird:</h3>
+            <h3>Was wir konkret anpacken werden:</h3>
             
-            <p><strong>🔹 Sicherheit:</strong> Wir stellen mehr Cops in die Problemviertel. Wo's sein muss, kommen Kameras hin. Gegen Gangs gehen wir richtig ran. Unsere Polizisten kriegen endlich die Ausrüstung und das Budget, das sie brauchen.</p>
-            
-            <p><strong>🔹 Wirtschaft & Jobs:</strong> Kleine Unternehmen zahlen viel zu viel Steuern. Das ändern wir. Wer nen Laden aufmachen will, soll das schnell und ohne 1000 Anträge machen können. Start-ups brauchen günstige Kredite, keinen Papierkram. Am Ende wollen wir echte Jobs sehen – nicht nur Zahlen in irgendeiner Statistik.</p>
-            
-            <p><strong>🔹 Straßen & Verkehr:</strong> Manche Straßen hier sind echt im Arsch. Die werden saniert. Busse und Bahnen müssen besser werden. Der Hafen hat Potenzial – das nutzen wir. Intelligente Ampelschaltungen würden schon mal helfen, den Verkehr flüssiger zu kriegen.</p>
-            
-            <p><strong>🔹 Verwaltung & Service:</strong> Keiner hat Bock, wegen jedem Scheiß zum Amt zu latschen. Das meiste davon geht online. Wartezeiten von Wochen? Geht gar nicht – das muss schneller werden. Ne App, wo man direkt mit der Verwaltung in Kontakt ist, wär auch nicht verkehrt. Und die ganzen überflüssigen Vorschriften – die können weg.</p>
-            
-            <p><strong>🔹 Justiz:</strong> Verfahren dauern viel zu lange. Wir brauchen mehr Leute bei Gericht. Wer immer wieder straffällig wird, muss das auch spüren. Gleichzeitig sollten wir denen, die ne zweite Chance verdient haben, auch dabei helfen, wieder auf die Beine zu kommen. Und Opfer von Straftaten? Die haben deutlich mehr Rechte verdient.</p>
+            <p>
+                <strong>🔹 Innere Sicherheit:</strong> Wir stellen mehr Polizisten in die Problemviertel. Dort, wo es nötig ist, werden moderne Überwachungskameras installiert. Gegen Bandenkriminalität gehen wir kompromisslos vor. Unsere Polizisten bekommen endlich die Ausrüstung, die sie brauchen – und das Budget dafür.
+            </p>
+            <p>
+                <strong>🔹 Wirtschaft & Arbeitsmarkt:</strong> Kleine und mittlere Unternehmen zahlen zu viel Steuern. Das ändern wir. Wer ein Geschäft aufmachen will, soll das schnell und unkompliziert tun können. Start-ups brauchen günstige Kredite, nicht Papierkram. Und am Ende sollen Jobs dabei rauskommen – echte, gute Jobs.
+            </p>
+            <p>
+                <strong>🔹 Infrastruktur & Verkehr:</strong> Unsere Straßen sind teilweise in einem katastrophalen Zustand. Die werden wir sanieren. Die Busse und Bahnen müssen besser werden. Der Hafen hat Potenzial – das schöpfen wir aus. Und intelligente Ampelschaltungen würden schon mal helfen, den Verkehr flüssiger zu machen.
+            </p>
+            <p>
+                <strong>🔹 Verwaltung & Bürgerservice:</strong> Niemand hat Lust, wegen jedem Antrag zum Amt zu rennen. Das meiste davon muss online gehen. Wartezeiten von Wochen? Inakzeptabel – das muss schneller werden. Eine App, über die man direkt mit der Verwaltung Kontakt hat, wäre auch nicht verkehrt. Und die ganzen überflüssigen Vorschriften – die können weg.
+            </p>
+            <p>
+                <strong>🔹 Justiz & Rechtswesen:</strong> Verfahren dauern ewig. Wir brauchen mehr Leute bei Gericht. Wer immer wieder straffällig wird, muss das auch spüren. Gleichzeitig sollten wir denen, die eine zweite Chance verdienen, auch dabei helfen, wieder auf die Beine zu kommen. Und Opfer von Straftaten? Die haben mehr Rechte verdient.
+            </p>
         </div>
 
+        <!-- Konzept -->
         <div class="content-section" id="konzept">
-            <h2><i class="fas fa-lightbulb"></i> Unser Konzept</h2>
-            <p>Die AfLS ist angetreten, um Los Santos richtig zu verändern. Nicht so'n bisschen hier und da – sondern grundlegend. Unser Plan basiert auf drei Säulen:</p>
+            <h2><i class="fas fa-lightbulb"></i> Unser Konzept - So geht's</h2>
+            <p>
+                Die AfLS ist angetreten, um Los Santos wirklich zu verändern. Nicht um ein bisschen hier und da zu verbessern, sondern um Dinge grundlegend anders zu machen. Unser Plan steht auf drei Säulen:
+            </p>
 
-            <h3>1. Sicherheit first</h3>
-            <p>Ohne Sicherheit läuft hier gar nix. Wer Angst hat, abends rauszugehen, hat keine Freiheit. Wir setzen auf Null-Toleranz. Kriminelle kriegen es mit uns zu tun – unsere Polizei bekommt alles, was sie braucht.</p>
-            <p>Unser Ziel: Los Santos soll wieder sicher sein. So sicher, dass sich jeder zu jeder Uhrzeit frei bewegen kann, ohne ständig über die Schulter schauen zu müssen.</p>
+            <h3>1. Sicherheit zuerst</h3>
+            <p>
+                Ohne Sicherheit läuft nichts. Wer Angst hat, abends rauszugehen, kann seine Freiheit nicht genießen. Wir setzen auf eine Null-Toleranz-Politik. Kriminelle kriegen es mit uns zu tun – unsere Polizei bekommt alle Mittel, die sie braucht.
+            </p>
+            <p>
+                Unser Ziel ist einfach: Los Santos soll wieder sicher sein. So sicher, dass sich jeder zu jeder Uhrzeit frei bewegen kann, ohne sich umschauen zu müssen.
+            </p>
 
             <h3>2. Wirtschaft ankurbeln</h3>
-            <p>Wir glauben an die Leute, die was aufbauen. An Unternehmer, an Leute, die anpacken und Risiken eingehen. Die brauchen keine Steine im Weg – die brauchen Rückenwind. Steuern runter, Bürokratie weg, Platz schaffen fürs Wachstum.</p>
-            <p>Gleichzeitig lassen wir keinen im Stich. Wer wirklich Hilfe braucht, kriegt sie. Aber wir erwarten auch, dass sich jeder einbringt. Das ist nur fair – und so funktioniert ne Gemeinschaft halt.</p>
+            <p>
+                Wir glauben an die, die was aufbauen. An Unternehmer, an Leute, die anpacken und Risiken eingehen. Die brauchen keine Steine im Weg – die brauchen Unterstützung. Steuern runter, Bürokratie weg, Platz schaffen für Wachstum.
+            </p>
+            <p>
+                Gleichzeitig lassen wir keinen im Stich. Wer wirklich Hilfe braucht, kriegt sie. Aber wir erwarten auch, dass sich jeder einbringt. Das ist fair – und so funktioniert eine Gemeinschaft.
+            </p>
 
-            <h3>3. Verwaltung für die Leute</h3>
-            <p>Zu lange haben die Behörden den Leuten das Leben schwer gemacht. Das drehen wir um. Wir digitalisieren, modernisieren, vereinfachen. Ziel: Die meisten Sachen sollen online gehen – schnell und unkompliziert.</p>
-            <p>Und wir legen die Karten auf den Tisch. Jeder hat das Recht zu wissen, was mit seinem Steuergeld passiert. Transparenz ist kein Bonus – das ist Standard.</p>
+            <h3>3. Verwaltung für die Bürger</h3>
+            <p>
+                Zu lange haben die Behörden den Leuten das Leben schwer gemacht. Das drehen wir um. Wir digitalisieren, modernisieren und vereinfachen. Ziel: Die meisten Sachen sollen online gehen – schnell und unkompliziert.
+            </p>
+            <p>
+                Und wir legen die Karten auf den Tisch. Jeder hat das Recht zu wissen, was mit seinem Steuergeld passiert. Transparenz ist kein Bonus – das ist Pflicht.
+            </p>
 
             <div class="ideology-box">
-                <h3>Was wir versprechen:</h3>
+                <h3>Was wir euch versprechen:</h3>
                 <p>
                     ✓ Nach 6 Monaten: Die Kriminalität geht spürbar runter<br>
-                    ✓ Nach 1 Jahr: Neue Jobs sind geschaffen<br>
+                    ✓ Nach 1 Jahr: Neue Arbeitsplätze sind geschaffen<br>
                     ✓ Nach 1 Jahr: Die meisten Behördengänge laufen digital<br>
                     ✓ Nach 2 Jahren: Die Hauptstraßen sind saniert<br>
                     ✓ Immer: Wir reden mit euch, nicht über euch
@@ -1037,9 +1119,12 @@
             </div>
         </div>
 
+        <!-- Rangsystem -->
         <div class="content-section" id="rangsystem">
-            <h2><i class="fas fa-sitemap"></i> Aufbau der Regierung</h2>
-            <p>Klare Strukturen, klare Zuständigkeiten. Jeder weiß, wofür er verantwortlich ist – und kann schnell handeln.</p>
+            <h2><i class="fas fa-sitemap"></i> So ist die AfLS-Regierung aufgebaut</h2>
+            <p>
+                Klare Strukturen, klare Zuständigkeiten. Jeder weiß, wofür er verantwortlich ist – und kann schnell handeln.
+            </p>
             
             <div class="rank-list">
                 <div class="rank-item top">30. Gouverneur</div>
@@ -1075,35 +1160,46 @@
             </div>
         </div>
 
+        <!-- Ideologie -->
         <div class="content-section" id="ideologie">
             <h2><i class="fas fa-brain"></i> Wofür wir stehen</h2>
             
-            <p>Die AfLS bringt frischen Wind. Wir kombinieren das, was funktioniert hat (Sicherheit, Ordnung, klare Regeln), mit dem, was jetzt nötig ist (Innovation, digitale Lösungen, echte Bürgernähe).</p>
+            <p>
+                Die AfLS – Alternative für Los Santos – steht für frischen Wind in der Politik. Wir kombinieren das, was bewährt ist (Sicherheit, Ordnung, klare Regeln), mit dem, was nötig ist (Innovation, Digitalisierung, Bürgernähe).
+            </p>
 
             <h3>Unsere Grundwerte:</h3>
             
             <div class="ideology-box">
-                <p><strong>🔷 Sicherheit:</strong> Darüber diskutieren wir nicht. Wer hier lebt, soll sich sicher fühlen. Punkt. Gegen Kriminalität gehen wir vor – konsequent und ohne Ausreden.</p>
+                <p><strong>🔷 Sicherheit:</strong> Darüber diskutieren wir nicht. Wer hier lebt, soll sich sicher fühlen können. Punkt. Wir gehen gegen Kriminalität vor – konsequent und ohne Ausreden.</p>
                 
-                <p><strong>🔷 Freiheit:</strong> Jeder soll sein Ding machen können. Solange er anderen nicht auf die Füße tritt, geht's uns nix an. Freiheit heißt aber auch Eigenverantwortung – das gehört dazu.</p>
+                <p><strong>🔷 Freiheit:</strong> Jeder soll sein Leben leben können, wie er will. Solange er anderen nicht auf die Füße tritt, geht uns das nichts an. Freiheit bedeutet auch Eigenverantwortung.</p>
                 
-                <p><strong>🔷 Gerechtigkeit:</strong> Vor dem Gesetz sind alle gleich. Kein Sonderrecht für Reiche, keine Extrawurst für Politiker oder Prominente. Das gilt ausnahmslos für jeden.</p>
+                <p><strong>🔷 Gerechtigkeit:</strong> Vor dem Gesetz sind alle gleich. Kein Sonderrecht für Reiche, keine Extrawurst für gut Vernetzte. Das gilt für jeden, ohne Ausnahme.</p>
                 
-                <p><strong>🔷 Transparenz:</strong> Ihr habt n Recht zu wissen, was mit eurem Steuergeld passiert. Wir legen die Karten auf den Tisch und verstecken uns nicht hinter irgendwelchem Behördendeutsch.</p>
+                <p><strong>🔷 Transparenz:</strong> Ihr habt ein Recht zu wissen, was wir mit eurem Steuergeld machen. Wir legen die Karten auf den Tisch und verstecken uns nicht hinter irgendwelchem Behördendeutsch.</p>
                 
-                <p><strong>🔷 Effizienz:</strong> Schluss mit dem ewigen Hin und Her. Entscheidungen müssen getroffen werden – und zwar so, dass sie auch was bringen. Bürokratie um der Bürokratie willen? Auf keinen Fall.</p>
+                <p><strong>🔷 Effizienz:</strong> Schluss mit dem ewigen Hin und Her. Entscheidungen müssen getroffen werden – und zwar so, dass sie auch was bringen. Bürokratie um der Bürokratie willen? Nicht mit uns.</p>
                 
-                <p><strong>🔷 Verantwortung:</strong> Jeder trägt Verantwortung. Für sich, für seine Familie, für die Gemeinschaft. Wir erwarten, dass sich jeder einbringt – und wir unterstützen die, die's wirklich brauchen.</p>
+                <p><strong>🔷 Verantwortung:</strong> Jeder trägt Verantwortung. Für sich selbst, für seine Familie, für die Gemeinschaft. Wir erwarten, dass sich jeder einbringt – und wir unterstützen die, die es wirklich brauchen.</p>
             </div>
 
-            <h3>Unsere Vision:</h3>
-            <p>Los Santos kann ne Stadt sein, auf die wir stolz sind. Wo Innovation und Tradition Hand in Hand gehen. Wo die Wirtschaft läuft, aber keiner auf der Strecke bleibt. Wo man gerne lebt, arbeitet und seine Kinder großzieht.</p>
-            <p>Wir reden nicht über euch – wir reden mit euch. Bevor wir Entscheidungen treffen, hören wir zu. Aber wenn die Entscheidung gefallen ist, ziehen wir sie durch. Ohne Wenn und Aber.</p>
-            <p>Uns geht's nicht um Ideologie. Uns geht's darum, was funktioniert. Wir fragen nicht, woher ne Idee kommt – wir fragen, ob sie was bringt. Das ist unser Kompass.</p>
-            <p>Die AfLS steht für messbare Ergebnisse. Keine leeren Versprechen, kein Gerede. Wir setzen uns Ziele und arbeiten daran. Und wenn mal was schiefgeht? Dann sagen wir das auch und machen's besser.</p>
+            <h3>Unsere Vision für Los Santos:</h3>
+            <p>
+                Los Santos kann eine Stadt sein, auf die wir stolz sind. Eine Stadt, in der Innovation und Tradition nebeneinander existieren. Wo die Wirtschaft läuft, aber keiner auf der Strecke bleibt. Wo man gerne lebt, arbeitet und seine Kinder großzieht.
+            </p>
+            <p>
+                Wir reden nicht über euch – wir reden mit euch. Bevor wir Entscheidungen treffen, hören wir zu. Aber wenn die Entscheidung gefallen ist, ziehen wir sie durch. Konsequent und ohne Wenn und Aber.
+            </p>
+            <p>
+                Uns geht es nicht um Ideologie. Uns geht es darum, was funktioniert. Wir fragen nicht, woher eine Idee kommt – wir fragen, ob sie was bringt. Das ist unser Kompass. Das Wohl der Bürger ist unser Ziel.
+            </p>
+            <p>
+                Die AfLS steht für messbare Ergebnisse. Keine leeren Versprechen, kein Gerede. Wir setzen uns klare Ziele und arbeiten daran. Und wenn mal was schiefgeht? Dann sagen wir das auch und machen es besser.
+            </p>
 
             <div class="slogan">
-                DIE AfLS – FÜR EINE STARKE ZUKUNFT!
+                DIE AfLS – FÜR EINE STARKE ZUKUNFT, LOS SANTOS NEU GESTALTEN!
             </div>
         </div>
     </div>
@@ -1115,6 +1211,7 @@
         <p style="font-size: 18px;">
             Die Modernisierungskraft für unsere Stadt
         </p>
+        
         <p style="margin-top: 20px; opacity: 0.9;">
             Kontakt: Vincenzo Young | ID: 160115 | Visum: 43
         </p>
@@ -1124,6 +1221,7 @@
     </footer>
 
     <script>
+        // Loading Screen
         window.addEventListener('load', function() {
             const loading = document.getElementById('loading');
             setTimeout(() => {
@@ -1131,6 +1229,7 @@
             }, 1000);
         });
 
+        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1149,6 +1248,7 @@
             });
         });
 
+        // Scroll Spy
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('.content-section, .hero, .team-section');
@@ -1167,6 +1267,7 @@
                 }
             });
 
+            // Header scroll effect
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
                 header.classList.add('scrolled');
@@ -1174,6 +1275,7 @@
                 header.classList.remove('scrolled');
             }
 
+            // Back to top button
             const backToTop = document.getElementById('backToTop');
             if (window.scrollY > 300) {
                 backToTop.classList.add('show');
@@ -1182,6 +1284,7 @@
             }
         });
 
+        // Back to top functionality
         document.getElementById('backToTop').addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -1189,12 +1292,14 @@
             });
         });
 
+        // Parallax Effect für Hero
         window.addEventListener('scroll', () => {
             const hero = document.querySelector('.hero');
             const scrolled = window.pageYOffset;
             hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         });
 
+        // Animation on scroll
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -1210,6 +1315,7 @@
             });
         }, observerOptions);
 
+        // Observe elements for animation
         document.querySelectorAll('.content-section, .info-banner, .ooc-section, .value-card, .team-section, .team-member').forEach(el => {
             el.style.opacity = 0;
             el.style.transform = 'translateY(20px)';
